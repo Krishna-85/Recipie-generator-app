@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+ 
+.gradient-text {
+  background: linear-gradient(to right, #FFD700, #B8860B); /* gold to dark gold */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
