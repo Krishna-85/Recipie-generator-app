@@ -50,7 +50,7 @@ const Home = () => {
 
         try {
             const response = await axios.post(
-                `http://localhost:3000/api/v1/recipe/ingredients`,
+                `https://recipie-generator-app.onrender.com/api/v1/recipe/ingredients`,
                 { ingredients, dietGoal },
                 { withCredentials: true }
             );
