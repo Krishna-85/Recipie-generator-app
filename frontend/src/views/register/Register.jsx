@@ -28,6 +28,8 @@ const Register = () => {
        },{
         withCredentials: true
        })
+console.log(import.meta.env.VITE_BACKEND_URL);
+// Output: https://recipie-generator-app.onrender.com
 
        dispatch(setUser({
         username:response.data.user.username,
