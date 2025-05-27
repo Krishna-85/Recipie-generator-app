@@ -11,7 +11,7 @@ const AppRoutes = () => {
      <BrowserRouter>
        <Toaster position="top-center" reverseOrder={false} />
      <Routes>
-        <Route path='/' element={<h1>home</h1>}/>
+        <Route path='/' element={<Navigate to="/register" replace />}/>
         <Route path='/register' element={<Register/>}/>
         <Route path='/home' element={<Authenticate><Home/></Authenticate>}/>
         <Route path='/login' element={<Login/>}/>
