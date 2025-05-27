@@ -5,6 +5,7 @@ import Home from '../views/home/Home';
 import Login from '../views/login/Login';
 import { Toaster } from 'react-hot-toast';
 import Authenticate from '../components/Authenticate';
+import NotFound from '../components/NotFound';
 
 const AppRoutes = () => {
   return (
@@ -15,6 +16,8 @@ const AppRoutes = () => {
         <Route path='/register' element={<Register/>}/>
         <Route path='/home' element={<Authenticate><Home/></Authenticate>}/>
         <Route path='/login' element={<Login/>}/>
+        <Route path='*' element={<NotFound/>}/>
+
      </Routes>
      </BrowserRouter>
   )
