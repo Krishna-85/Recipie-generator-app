@@ -17,11 +17,14 @@ export async function getRecipeFromIngredients(ingredients, dietGoal) {
     Generate a recipe using the following ingredients. Provide a detailed recipe including preparation steps, cooking time, and serving suggestions.
     </task>
 
+    
+
     <preferences>
     - Use the ingredients provided by the user.
     - Ensure the recipe is easy to follow and suitable for home cooks.
     - Include cooking time and serving suggestions.
     - If the user has a specific diet goal, consider it while generating the recipe.
+    - and also give the more 2 recipe suggestions that can user make with the same ingredients.,
     </preferences>
 
     in your response, include the following information for each ingredient:
