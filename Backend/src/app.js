@@ -4,7 +4,8 @@ import cookieParser from 'cookie-parser';
 import indexRoutes from './routes/index.routes.js';
 import path from 'path';
 import morgan from 'morgan';
-
+import dotenv from 'dotenv';
+dotenv.config()
 
 const app = express();
 app.use(morgan('dev'));
